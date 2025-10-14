@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The WolfBin - Pastebin cifrado y minimalista</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container my-5">
+        <header class="text-center mb-5">
+            <h1 class="display-4 fw-bold">The WolfBin</h1>
+            <p class="lead">Pastebin minimalista, cifrado y de código abierto</p>
+        </header>
+
+        <section class="mb-5">
+            <h2 class="mb-4">¿Qué es The WolfBin?</h2>
+            <p>
+                The WolfBin es un pastebin online minimalista y de código abierto donde el servidor no tiene conocimiento alguno de los datos almacenados.
+                Los datos se cifran y descifran en el navegador mediante <strong>AES de 256 bits en Galois Counter Mode</strong>.
+            </p>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="mb-4">¿Qué ofrece?</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Eliminación de contenido bajo demanda</li>
+                <li class="list-group-item">Sistema similar a Pastebin para almacenar documentos de texto, ejemplos de código, etc.</li>
+                <li class="list-group-item">Cifrado de datos enviados al servidor</li>
+                <li class="list-group-item">Protección con contraseña para leer el archivo pegado</li>
+                <li class="list-group-item">Tiempos de expiración: "para siempre" o "quemar después de leer"</li>
+                <li class="list-group-item">Soporte para Markdown y vista previa de HTML</li>
+                <li class="list-group-item">Resaltado de sintaxis para código fuente con prettify.js y 4 temas</li>
+                <li class="list-group-item">Soporte para carga de archivos, imágenes, multimedia y vista previa de PDF</li>
+                <li class="list-group-item">Plantillas personalizables: Bootstrap5, Bootstrap CSS y Darkstrap</li>
+                <li class="list-group-item">Detección automática de idioma y sistema de traducción</li>
+                <li class="list-group-item">Generación de código QR para compartir URLs fácilmente</li>
+            </ul>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="mb-4">¿Qué NO ofrece?</h2>
+            <div class="alert alert-warning">
+                <p>
+                    La clave utilizada para cifrar el archivo pegado forma parte de la URL.
+                    Si publicas la URL de un archivo pegado <strong>sin contraseña</strong>, cualquiera podrá leerla.
+                    Usa una contraseña segura y compártela de forma privada y cifrada de extremo a extremo si quieres que tu archivo pegado permanezca privado.
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-5 text-center">
+            <h2 class="mb-4">¿Listo para probarlo?</h2>
+            <a href="#" class="btn btn-primary btn-lg">Ir a The WolfBin</a>
+        </section>
+
+        <footer class="text-center mt-5">
+            <p>The WolfBin - Código abierto y minimalista</p>
+            <p><a href="#">GitHub</a> | <a href="#">Documentación</a></p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
